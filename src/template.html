@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Charset 설정 -->
+    <meta charset="UTF-8" />
+    <!-- 뷰포트 메타 태크 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 페이지 제목 -->
+    <title>이디야 커피 - {페이지 제목}</title>
+    <!-- 메타 데이터 -->
+    <meta
+      name="description"
+      content="이디야 커피 브랜드 사이트 (학습용) 웹사이트 입니다."
+    />
+    <meta
+      name="keywords"
+      content="이디야, 커피, 브랜드, 사이트, 학습용, 홈페이지, 이듬, 블렌디드 러닝"
+    />
+    <meta name="author" content="이듬(E.UID)" />
+
+    <!-- Open Graph SEO - https://ogp.me/-->
+    <meta name="og:site_name" content="이듬과 멋사의 만남" />
+    <meta name="og:title" content="이듬(E.UID) - 반응형웹(EDIYA)" />
+    <meta
+      name="og:description"
+      content="이듬과 멋쟁이 사자처럼이 함께하는 프론트엔드 스쿨 8기 반응형웹 예제입니다."
+    />
+    <meta name="og:url" content="https://euid.dev/" />
+    <meta name="og:type" content="website" />
+    <meta name="og:image" content="/images/og-image.png" />
+
+    <link rel="preconnect" href="//cdn.jsdelivr.net" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+    />
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="/favicon/favicon.svg" />
+
+    <!-- 웹폰트 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+    />
+    <!-- 공통 스타일 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- 애니메이션 -->
+    <link rel="stylesheet" href="/css/animation.css" />
+    <!-- 페이지별 스타일 -->
+    <link rel="stylesheet" href="/css/{page}.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="app-header-container">
+        <header class="app-header">
+          <h1 class="brand">
+            <a href="/views/home.html">
+              <img src="/images/brand.svg" alt="Ediya Coffee" />
+            </a>
+          </h1>
+          <button
+            type="button"
+            class="button-none button-burger is-open-menu"
+            aria-label="메뉴 열기"
+            title="메뉴 열기"
+          >
+            <span class="ir"></span>
+          </button>
+          <nav class="app-navigation" aria-label="메인 메뉴">
+            <ul>
+              <li><a href="/views/signin.html">로그인</a></li>
+              <li><a href="/views/signup.html">회원가입</a></li>
+              <li><a href="/views/beverage.html">이디야 음료</a></li>
+              <li><a href="/views/news.html">이디야 뉴스</a></li>
+              <li><a href="/views/store.html">매장 찾기</a></li>
+            </ul>
+            <button
+              type="button"
+              class="button-none button-close is-close-menu"
+              title="메뉴 닫기"
+              aria-label="메뉴 닫기"
+            >
+              <span class="close" aria-hidden="true">×</span>
+            </button>
+          </nav>
+        </header>
+      </div>
+      <div class="app-main-container">페이지 별 메인 콘텐츠</div>
+      <div class="app-footer-container">
+        <footer class="app-footer">
+          <figure class="footer-brand">
+            <img src="/images/brand-dark.svg" alt="EDIYA COFFEE" />
+          </figure>
+          <div class="guide-wrapper">
+            <ul class="guide">
+              <li><a href="/">고객의 소리</a></li>
+              <li><a href="/">개인정보처리방침</a></li>
+              <li><a href="/">가맹안내</a></li>
+              <li><a href="/">채용안내</a></li>
+              <li><a href="/">대량쿠폰구매</a></li>
+              <li><a href="/">점주의 방</a></li>
+              <li><a href="/">멤버스 이용약관</a></li>
+              <li><a href="/">사이트맵</a></li>
+            </ul>
+          </div>
+          <address class="address">
+            <span
+              >서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동
+              221-17)</span
+            >
+            <span><b>TEL : </b>02-543-6467</span>
+            <span><b>FAX : </b>02-543-7191</span>
+            <span><b>사업자등록번호 : </b>107-86-16302</span>
+            <span><b>통신판매업 신고 : </b>강남 제 002519호</span>
+            <span><b>대표이사 : </b>문창기</span>
+          </address>
+          <small class="copyright"
+            >&copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED.</small
+          >
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

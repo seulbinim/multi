@@ -23,37 +23,44 @@
 <body>
   <div class="container">
     <header class="header">
-      <h1 class="logo">
-        <a href="/" class="logo__link">
-          <img src="./images/brand.svg" class="logo__img" alt="이디야" />
-        </a>
-      </h1>
-      
-      <button type="button" class="button--none button--burger" aria-label="메뉴 열기">
-      </button>
-      
-      <nav class="navigation">
-        <h2 class="a11yHidden">메인 메뉴</h2>
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="/" class="menu__link">로그인</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link">회원가입</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link">이디야 음료</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link">이디야 뉴스</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__link">매장찾기</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__inner">
+        <h1 class="logo">
+          <a href="/" class="logo__link">
+            <img src="./images/brand.svg" class="logo__img" alt="이디야" />
+          </a>
+        </h1>
+        
+        <button type="button" class="button--none button--burger" aria-label="메뉴 열기">
+        </button>
+        
+        <nav class="navigation">
+          <h2 class="a11yHidden">메인 메뉴</h2>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="/" class="menu__link">로그인</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">회원가입</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">이디야 음료</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">이디야 뉴스</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">매장찾기</a>
+            </li>
+          </ul>
+          <button type="button" aria-label="메뉴 닫기" class="button--none button--close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </nav>
+      </div>
     </header>
-    <main class="mainContent">메인 콘텐츠</main>
+    <main class="mainContent">
+      메인 콘텐츠
+    </main>
     <footer class="footer">푸터</footer>
   </div>
 </body>

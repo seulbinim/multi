@@ -5,13 +5,16 @@
   align-items: center;
 }
 
- /* 데스크탑 헤더 */
+ /* 공통 헤더 */
  .header {
-  background: yellow;
-  display: flex;
-  flex-flow: row nowrap;
-  padding: var(--spacing-2xl) 0;
+  background: rgba(255,255,255, 0.85);
   inline-size: 100%;
+  
+  & .header__inner{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
 }
 
 
@@ -21,7 +24,6 @@
 }
 
 .logo__link {
-  background: pink;
   display: block;
   inline-size: 14rem;
 }
@@ -29,9 +31,24 @@
 
 /* 모바일 스타일 */
 @media (max-width: 768px) {
+  .header__inner{
+    margin-inline-start: 2rem;
+  }
+
   .menu {
-    /* 임시 */
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--prrmary-blue-6);
+    /* transform: translateX(-120%); */
+    translate: -120% 0;
+    transition: all 0.2s;
+  }
+
+  .menu.is--active{
+    translate: 0 0;
   }
 
   .header .button--none{
@@ -45,7 +62,7 @@
     background-repeat: no-repeat;
     background-position: 50%;
     inline-size: 5rem;
-    block-size: 5rem;
+    aspect-ratio: 1/1;
     transition: all 0.2s;
     
     &:hover{
@@ -61,19 +78,27 @@
 
 /* 데스크탑 스타일 */
 @media (min-width: 768px) {
-  .header .button--burger {
+  .header .button--burger, .header .button--close  {
     display: none;
   }
 
   /* 데스크탑 헤더 */
-  .header {
-    inline-size: 74rem;
+  .header{
+    position: sticky;
+    top: 0;
+    padding: var(--spacing-2xl) 0;
+    box-shadow: var(--shadow-type-2);
+  }
+
+  .header__inner {
+    inline-size: clamp(74rem, 80%, 120rem);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 
   /* 데스크탑 내비게이션 */
   .menu {
     display: flow-root;
-    background: lime;
   }
 
   .menu__item {

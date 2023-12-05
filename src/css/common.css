@@ -1,0 +1,67 @@
+/* 공통 컨테이너 */
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+ /* 데스크탑 헤더 */
+ .header {
+  background: yellow;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: var(--spacing-2xl) 0;
+  inline-size: 100%;
+}
+
+
+/* 공통 로고 */
+.logo {
+  margin-inline-end: auto;
+}
+
+.logo__link {
+  background: pink;
+  display: block;
+  inline-size: 14rem;
+}
+
+
+/* 모바일 스타일 */
+@media (max-width: 768px) {
+  .menu {
+    /* 임시 */
+    display: none;
+  }
+}
+
+/* 데스크탑 스타일 */
+@media (min-width: 768px) {
+  .header .button--burger {
+    display: none;
+  }
+
+  /* 데스크탑 헤더 */
+  .header {
+    inline-size: 74rem;
+  }
+
+  /* 데스크탑 내비게이션 */
+  .menu {
+    display: flow-root;
+    background: lime;
+  }
+
+
+  .menu__item {
+    float: left;
+    margin-inline-start: 0.8rem;
+  }
+
+  /* 데스크탑 푸터 */
+  .footer {
+    background: #000;
+    color: #fff;
+    inline-size: 100%;
+  }
+}

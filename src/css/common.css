@@ -1,3 +1,11 @@
+/* 공통 스타일 */
+.button--none{
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+
 /* 공통 컨테이너 */
 .container {
   display: flex;
@@ -35,26 +43,63 @@
     margin-inline-start: 2rem;
   }
 
-  .menu {
+  .navigation {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--prrmary-blue-6);
-    /* transform: translateX(-120%); */
+    background: var(--primary-blue-6);
+    color: #fff;
     translate: -120% 0;
     transition: all 0.2s;
+    
+    display: grid;
+    grid-template-rows: 10rem auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "close" "menu";
   }
 
-  .menu.is--active{
+  .navigation.is--active{
     translate: 0 0;
   }
 
-  .header .button--none{
-    background: transparent;
-    border: 0;
-    padding: 0;
+  .menu{
+    grid-area: menu;
+    font-size: 1.4rem;
+    line-height: 3;
+    letter-spacing: -0.02em;
+    padding: 0 2rem;
+  }
+
+  .menu__item{
+    border-top: 1px solid var(--primary-blue-4);
+  }
+  
+  .menu__link{
+    display: block;
+    padding-inline-start: 3.6rem;
+    margin: 0 -2rem;
+  }
+  
+  .menu__link:hover, .menu__link:focus{
+    background: var(--scondary-violet-4);
+  }
+
+  .navigation .button--close{
+    grid-area: close;
+    align-self: start;
+    justify-self: end;
+    padding: 1.2rem;
+    margin: 1.6rem;
+
+    &:hover{
+      scale: 1.5;
+    }
+
+    &:focus{
+      scale: 1.5;
+    }
   }
 
   .header .button--burger{

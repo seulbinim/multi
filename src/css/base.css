@@ -41,7 +41,8 @@ button, select, textarea, input{
 
 button {
   cursor: pointer;
-
+  color: inherit;
+  
   &:disabled {
     cursor: not-allowed;
   }

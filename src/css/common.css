@@ -33,6 +33,30 @@
     /* 임시 */
     display: none;
   }
+
+  .header .button--none{
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  .header .button--burger{
+    background-image: url("./../images/button-navigation.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    inline-size: 5rem;
+    block-size: 5rem;
+    transition: all 0.2s;
+    
+    &:hover{
+      background-color: var(--grayscale-snow);
+    }
+
+    &:focus{
+      background-color: var(--grayscale-snow);
+    }
+  }
+
 }
 
 /* 데스크탑 스타일 */
@@ -51,7 +75,6 @@
     display: flow-root;
     background: lime;
   }
-
 
   .menu__item {
     float: left;

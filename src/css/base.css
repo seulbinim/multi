@@ -1,0 +1,16 @@
+:root{
+  --blue-100: blue;
+  --blue-200: skyblue;
+}
+
+html{
+  font-size: 0.625em;
+}
+
+body {
+  --bg: var(--blue-200);
+
+  font-size: 1.6rem;
+  font-family: 'SUIT Variable', sans-serif;
+  background-color: var(--bg);
+}

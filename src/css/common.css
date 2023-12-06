@@ -1,4 +1,18 @@
 /* 공통 스타일 */
+/* 텍스트 스타일 */
+.textPrimary{
+  color: #2c68ae;
+  font-weight: 700;
+}
+
+.textSecondary{
+  color: #72bde3;
+}
+
+.textAccent{
+  color: #a7d1e7;
+}
+
 /* 버튼 스타일 제거 */
 .button--none{
   background: transparent;
@@ -40,8 +54,6 @@
   }
 }
 
-
-
 /* 구분선 */
 .divider{
   block-size: 1px;
@@ -53,6 +65,7 @@
 .container {
   display: flex;
   flex-flow: column nowrap;
+  min-block-size: 100vh;
   align-items: center;
 }
 
@@ -181,6 +194,12 @@
   .header .button--burger, .header .button--close  {
     display: none;
   }
+}
+
+/* 공통 메인 콘텐츠 */
+.mainContent{
+  inline-size: 100%;
+  flex-grow: 1;
 }
 
 /* 공통 푸터 */

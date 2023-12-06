@@ -1,4 +1,4 @@
-/* 공통 newMenu */
+/* 공통 newMenu__description */
 .newMenu__description{
  background: #BAE5FB;
  display: flex;
@@ -29,7 +29,7 @@
   }
 }
 
-/* 모바일 newMenu */
+/* 모바일 newMenu__description */
 @media (max-width: 768px) {
   .newMenu__description{
     padding-block: 4.2rem 2.1rem;
@@ -41,14 +41,99 @@
   }
 }
 
-/* 데스크탑 newMenu */
+/* 데스크탑 newMenu__description */
 @media (min-width: 768px) {
   .newMenu__description{
     padding-block:5rem 3rem;
     row-gap: 3rem;
 
+    & p[lang="en"]{
+      font-size: 3.1rem;
+    }
+
     & em{
       margin-inline-start: 1.5rem;
     }
   }
+}
+
+/* 공통 newMenu__list */
+.newMenu__list{
+  display: grid;
+}
+
+.newMenu__item{
+  inline-size: 50%;
+  max-inline-size: 30rem;
+  position: relative;
+}
+
+.newMenu__Name{
+
+  & div{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+  }
+}
+
+.newMenu__cheese, .newMenu__choco, .newMenu__rice{
+  position: absolute;
+}
+
+.newMenu__choco{
+  left: 0;
+  bottom: 0;
+  translate: -100% 0;
+}
+
+.newMenu__rice{
+  right: 0;
+  top: 0;
+  translate: 70% 100%;
+}
+
+
+/* 모바일 newMenu__list */
+@media (max-width: 768px) {
+  .newMenu__list{
+   grid-template-columns: 1fr;
+   
+   & .newMenu__item{
+    justify-self: center;
+   }
+  }
+
+  .itemCheese{
+    display: none;
+  }
+}
+
+/* 데스크탑 newMenu__list */
+@media (min-width: 768px) {
+  .newMenu__list{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20rem;
+  }
+
+  .itemCheese{
+    justify-self: end;
+  }
+
+  .newMenu__cheese{
+    left: 0;
+    bottom: 0;
+    translate: 0 -200%;
+  }
+
+  .newMenu__choco{
+    translate: -100% -200%;
+  }
+  
+  .newMenu__rice{
+    right: 0;
+    top: 0;
+    translate: 50% 130%;
+  }
+  
 }

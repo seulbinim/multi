@@ -24,8 +24,29 @@
   }
 }
 
-/* 닫기 버튼 */
+/* 아웃라인 버튼 */
+.button--outline{
+  border: 1px solid currentColor;
+  background: transparent;
+  color: var(--primary-blue-1);
+  padding: 0.8rem 1.8rem;
+  display: inline-flex;
+}
 
+/* 데스크탑 아웃라인 버튼 */
+@media (min-width: 768px) {
+  .button--outline{
+    padding-inline: 2.4rem;
+  }
+}
+
+
+
+/* 구분선 */
+.divider{
+  block-size: 1px;
+  background: var(--grayscale-dark-gray);
+}
 
 
 /* 공통 컨테이너 */

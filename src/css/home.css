@@ -1,0 +1,54 @@
+/* 공통 newMenu */
+.newMenu__description{
+ background: #BAE5FB;
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+ text-align: center;
+ padding-inline: 2rem;
+
+ & .divider{
+  inline-size: 4rem;
+ }
+
+ & p{
+    font-size: 2.5rem;
+    font-weight: 100;
+    line-height: 1.1;
+
+    &:nth-of-type(2){
+      font-size: 1.4rem;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
+
+  & em{
+    color: var(--primary-blue-1);
+    font-weight: 700;
+  }
+}
+
+/* 모바일 newMenu */
+@media (max-width: 768px) {
+  .newMenu__description{
+    padding-block: 4.2rem 2.1rem;
+    row-gap: 1.5rem;
+
+    & em{
+      display: block;
+    }
+  }
+}
+
+/* 데스크탑 newMenu */
+@media (min-width: 768px) {
+  .newMenu__description{
+    padding-block:5rem 3rem;
+    row-gap: 3rem;
+
+    & em{
+      margin-inline-start: 1.5rem;
+    }
+  }
+}

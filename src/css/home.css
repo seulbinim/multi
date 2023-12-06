@@ -66,6 +66,14 @@
   inline-size: 50%;
   max-inline-size: 30rem;
   position: relative;
+
+  & img{
+    animation: bounce 2000ms infinite alternate ease-in-out both;
+  }
+}
+
+.itemChocoRice img{
+  animation-delay: 1000ms;
 }
 
 .newMenu__Name{
@@ -118,12 +126,17 @@
 
   .itemCheese{
     justify-self: end;
+    translate: 0 -50%;
+  }
+
+  .itemChocoRice{
+    translate: 0 -10%;
   }
 
   .newMenu__cheese{
     left: 0;
     bottom: 0;
-    translate: 0 -200%;
+    translate: 0 -100%;
   }
 
   .newMenu__choco{

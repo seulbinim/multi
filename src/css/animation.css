@@ -1,0 +1,5 @@
+/* Bounce 애니메이션 */
+@keyframes bounce {
+  0%{ translate: 0 0}
+  100%{ translate: 0 -20px}
+}

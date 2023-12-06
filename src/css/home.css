@@ -150,3 +150,50 @@
   }
   
 }
+
+/* 공통 홍보영상, 공지사항, 새소식 */
+.info{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.youtube{
+  background: yellow;
+}
+
+.notice{
+  background: pink;
+}
+
+.news{
+  background: skyblue;
+}
+
+/* 모바일 공통 홍보영상, 공지사항, 새소식 */
+@media (max-width: 768px) {
+  .info__inner{
+    inline-size: 100%;
+  }
+}
+
+/* 데스크탑 공통 홍보영상, 공지사항, 새소식 */
+@media (min-width: 768px) {
+  .info{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    & .info__inner{
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  }
+
+  .youtube{
+    inline-size: 41rem;
+  }
+
+  .notice, .news{
+    inline-size: 35.5rem;
+  }
+}

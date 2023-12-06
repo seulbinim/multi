@@ -1,9 +1,31 @@
 /* 공통 스타일 */
+/* 버튼 스타일 제거 */
 .button--none{
   background: transparent;
   border: 0;
   padding: 0;
 }
+
+/* 햄버거 버튼 */
+.button--burger{
+  background-image: url("./../images/button-navigation.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  inline-size: 5rem;
+  aspect-ratio: 1/1;
+  transition: all 0.2s;
+  
+  &:hover{
+    background-color: var(--grayscale-snow);
+  }
+
+  &:focus{
+    background-color: var(--grayscale-snow);
+  }
+}
+
+/* 닫기 버튼 */
+
 
 
 /* 공통 컨테이너 */
@@ -13,11 +35,11 @@
   align-items: center;
 }
 
- /* 공통 헤더 */
- .header {
+/* 공통 헤더 */
+.header {
   background: rgba(255,255,255, 0.85);
   inline-size: 100%;
-  
+
   & .header__inner{
     display: flex;
     flex-flow: row nowrap;
@@ -25,6 +47,28 @@
   }
 }
 
+/* 모바일 헤더 */
+@media (max-width) {
+  .header__inner{
+    margin-inline-start: 2rem;
+  }
+}
+
+/* 데스크탑 헤더 */
+@media (min-width) {
+  .header{
+    position: sticky;
+    top: 0;
+    padding: var(--spacing-2xl) 0;
+    box-shadow: var(--shadow-type-2);
+  }
+
+  .header__inner {
+    inline-size: clamp(74rem, 80%, 120rem);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+}
 
 /* 공통 로고 */
 .logo {
@@ -36,13 +80,9 @@
   inline-size: 14rem;
 }
 
-
-/* 모바일 스타일 */
+/* 내비게이션 */
+/* 모바일 내비게이션 */
 @media (max-width: 768px) {
-  .header__inner{
-    margin-inline-start: 2rem;
-  }
-
   .navigation {
     position: fixed;
     top: 0;
@@ -51,7 +91,6 @@
     bottom: 0;
     background: var(--primary-blue-6);
     color: #fff;
-     
     translate: -120% 0;
     transition: all 0.2s;
     backdrop-filter: blur(2px);
@@ -102,47 +141,10 @@
       scale: 1.5;
     }
   }
-
-  .header .button--burger{
-    background-image: url("./../images/button-navigation.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    inline-size: 5rem;
-    aspect-ratio: 1/1;
-    transition: all 0.2s;
-    
-    &:hover{
-      background-color: var(--grayscale-snow);
-    }
-
-    &:focus{
-      background-color: var(--grayscale-snow);
-    }
-  }
-
 }
 
-/* 데스크탑 스타일 */
+/* 데스크탑 내비게이션 */
 @media (min-width: 768px) {
-  .header .button--burger, .header .button--close  {
-    display: none;
-  }
-
-  /* 데스크탑 헤더 */
-  .header{
-    position: sticky;
-    top: 0;
-    padding: var(--spacing-2xl) 0;
-    box-shadow: var(--shadow-type-2);
-  }
-
-  .header__inner {
-    inline-size: clamp(74rem, 80%, 120rem);
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-  }
-
-  /* 데스크탑 내비게이션 */
   .menu {
     display: flow-root;
   }
@@ -151,11 +153,52 @@
     float: left;
     margin-inline-start: 0.8rem;
   }
+}
 
-  /* 데스크탑 푸터 */
-  .footer {
-    background: #000;
-    color: #fff;
-    inline-size: 100%;
+/* 데스크탑 햄버거 버튼 및 닫기 버튼 */
+@media (min-width: 768) {
+  .header .button--burger, .header .button--close  {
+    display: none;
   }
 }
+
+/* 공통 푸터 */
+.footer {
+  background: #000;
+  color: #fff;
+  inline-size: 100%;
+}
+
+/* 모바일 푸터 */
+@media (max-width: 768px) {
+  .footer{
+   
+  }
+}
+
+/* 데스크탑 푸터 */
+@media (min-width: 768px) {
+  .footer{
+
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ================================ */
+/* 모바일 */
+@media (max-width: 768px) {
+
+}
+
+/* 데스크탑 */
+@media (min-width: 768px) {
+
+}
+/* ================================ */

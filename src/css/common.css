@@ -48,14 +48,14 @@
 }
 
 /* 모바일 헤더 */
-@media (max-width) {
+@media (max-width: 768px) {
   .header__inner{
     margin-inline-start: 2rem;
   }
 }
 
 /* 데스크탑 헤더 */
-@media (min-width) {
+@media (min-width: 768px) {
   .header{
     position: sticky;
     top: 0;
@@ -156,7 +156,7 @@
 }
 
 /* 데스크탑 햄버거 버튼 및 닫기 버튼 */
-@media (min-width: 768) {
+@media (min-width: 768px) {
   .header .button--burger, .header .button--close  {
     display: none;
   }

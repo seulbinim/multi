@@ -154,7 +154,9 @@
 /* 공통 홍보영상, 공지사항, 새소식 */
 .info{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap:  row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .youtube{
@@ -178,22 +180,19 @@
 
 /* 데스크탑 공통 홍보영상, 공지사항, 새소식 */
 @media (min-width: 768px) {
-  .info{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    & .info__inner{
-      display: flex;
-      flex-flow: row nowrap;
-    }
+  .info__inner{
+    display: grid;
+    grid-template-columns: 41rem 35.5rem;
+    grid-template-areas: "youtube notice" "youtube news";
   }
 
   .youtube{
-    inline-size: 41rem;
+    grid-area: youtube;
   }
-
-  .notice, .news{
-    inline-size: 35.5rem;
+  .notice{
+    grid-area: notice;
+  }
+  .news{
+    grid-area: news;
   }
 }

@@ -161,6 +161,10 @@
 
 .youtube{
   background: yellow;
+
+  & iframe{
+    aspect-ratio: 16/9;
+  }
 }
 
 .notice{
@@ -180,10 +184,15 @@
 
 /* 데스크탑 공통 홍보영상, 공지사항, 새소식 */
 @media (min-width: 768px) {
-  .info__inner{
-    display: grid;
-    grid-template-columns: 41rem 35.5rem;
-    grid-template-areas: "youtube notice" "youtube news";
+  .info{
+    background: var(--grayscale-light-gray);
+
+    & .info__inner{
+      display: grid;
+      grid-template-columns: 50% 35.5rem;
+      grid-template-areas: "youtube notice" "youtube news";
+      padding-block: 6.2rem;
+    }
   }
 
   .youtube{

@@ -1,0 +1,29 @@
+.bg-sprite{
+  list-style-type: none;
+
+  & li{
+    background-repeat: no-repeat;
+    padding-inline-start: 20px;
+  }
+
+  & .no1{
+    background-image: url(./../images/svg/sprites-bg.svg#checked);
+  }
+
+  & .no2{
+    background-image: url(./../images/svg/sprites-bg.svg#warning);
+  }
+
+  & .no3{
+    background-image: url(./../images/svg/sprites-bg.svg#visible);
+  }
+
+  & .no4{
+    background-image: url(./../images/svg/sprites-bg.svg#invisible);
+  }
+
+  & .no5{
+    background-image: url(./../images/svg/sprites-bg.svg#checkmark);
+  }
+  
+}

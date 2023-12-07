@@ -220,9 +220,9 @@
   }
 }
 
-
 .news{
-  background: skyblue;
+  /* background: var(--primary-blue-1);
+  color: var(--grayscale-white) */
 }
 
 /* 모바일 공통 홍보영상, 공지사항, 새소식 */
@@ -235,7 +235,7 @@
 /* 데스크탑 공통 홍보영상, 공지사항, 새소식 */
 @media (min-width: 768px) {
   .info{
-    background: var(--grayscale-light-gray);
+    background: var(--grayscale-snow);
 
     & .info__inner{
       display: grid;

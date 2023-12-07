@@ -163,6 +163,7 @@
   background: yellow;
 
   & iframe{
+    inline-size: 100%;
     aspect-ratio: 16/9;
   }
 }
@@ -205,3 +206,4 @@
     grid-area: news;
   }
 }
+

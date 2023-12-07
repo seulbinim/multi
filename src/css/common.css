@@ -60,6 +60,24 @@
   background: var(--grayscale-dark-gray);
 }
 
+/* 공통 본문 바로가기 링크 */
+.skipNav a{
+  display: block;
+  padding: 1.5rem;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-size: 1.4rem;
+  position: absolute;
+  inline-size: 100%;
+  translate: 0 -150%;
+  z-index: 10;
+}
+
+.skipNav a:focus{
+  translate: 0 0;
+}
+
 
 /* 공통 컨테이너 */
 .container {

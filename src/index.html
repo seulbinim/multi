@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
+  <div class="skipNav">
+    <a href="#main">본문 바로가기</a>
+  </div>
   <div class="container">
     <header class="header">
       <div class="header__inner">
@@ -58,14 +61,14 @@
         </nav>
       </div>
     </header>
-    <main class="mainContent">
+    <main class="mainContent" id="main">
       <div class="newMenu">
         <h2 class="a11yHidden">신규 출시 음료</h2>
           <div class="newMenu__description">
             <p lang="en">ALWAYS BESIDE YOU<em>EDIYA COFFEE</em></p>
             <div class="divider"></div>
             <p>늘 당신 곁에, 이디야 커피의 새로운 메뉴를 맛보세요</p>
-            <a href="/" class="goMenuLink button--outline">메뉴 보기</a>
+            <a href="/" class="goMenuLink button--outline" id="goMenu">메뉴 보기</a>
           </div>
           <ul class="newMenu__list">
             <li class="newMenu__item itemCheese">

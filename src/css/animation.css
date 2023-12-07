@@ -3,3 +3,9 @@
   0%{ translate: 0 0}
   100%{ translate: 0 -20px}
 }
+
+/* Fade Effect 애니메이션*/
+@keyframes fadeEffect {
+  0%{ opacity: 0;}
+  100%{ opacity: 1;}
+}

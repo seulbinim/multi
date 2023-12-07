@@ -3,9 +3,242 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>인트로 - 이디야</title>
+  <title>홈 - 이디야 커피</title>
+  <meta name="og:site_name" content="멀티캠퍼스 정규 과정" />
+  <meta name="og:title" content="업무에 바로쓰는 HTML5와 CSS3" />
+  <meta
+    name="og:description"
+    content="업무에 바로쓰는 HTML5와 CSS3 예제"
+  />
+  <meta name="og:url" content="https://euid.dev/" />
+  <meta name="og:type" content="website" />
+  <meta name="og:image" content="./images/og-image.png" />
+  <link rel="icon" href="./favicon/favicon.svg" />
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+    />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  
+  <div class="skipNav">
+    <a href="#main">본문 바로가기</a>
+  </div>
+  <div class="container">
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="logo">
+          <a href="/" class="logo__link">
+            <img src="./images/brand.svg" class="logo__img" alt="이디야" />
+          </a>
+        </h1>
+        
+        <button type="button" class="button--none button--burger" aria-label="메뉴 열기">
+        </button>
+        
+        <nav class="navigation">
+          <h2 class="a11yHidden">메인 메뉴</h2>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="/" class="menu__link">로그인</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">회원가입</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">이디야 음료</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">이디야 뉴스</a>
+            </li>
+            <li class="menu__item">
+              <a href="/" class="menu__link">매장찾기</a>
+            </li>
+          </ul>
+          <button type="button" aria-label="메뉴 닫기" class="button--none button--close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="mainContent" id="main">
+      <div class="newMenu">
+        <h2 class="a11yHidden">신규 출시 음료</h2>
+          <div class="newMenu__description">
+            <p lang="en">ALWAYS BESIDE YOU<em>EDIYA COFFEE</em></p>
+            <div class="divider"></div>
+            <p>늘 당신 곁에, 이디야 커피의 새로운 메뉴를 맛보세요</p>
+            <a href="/" class="goMenuLink button--outline" id="goMenu">메뉴 보기</a>
+          </div>
+          <ul class="newMenu__list">
+            <li class="newMenu__item itemCheese">
+              <figure class="bounce">
+                <img src="./images/cheese-cookie.png" srcset="./images/cheese-cookie.png 306w, ./images/cheese-cookie@2x.png 612w" alt="" />
+                <figcaption class="newMenu__Name">
+                  <div class="newMenu__cheese">
+                    <span class="newMenu__Name--ko textPrimary">치즈가 쿠키했대</span>
+                    <span class="newMenu__Name--ko textScondary">쉐이크</span>
+                    <span class="newMenu__Name--en textAccent">Cheese Shake</span>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="newMenu__item itemChocoRice">
+              <figure class="bounce">
+                <img src="./images/choco-rice.png" srcset="./images/choco-rice.png 380w, ./images/choco-rice@2x.png 759w" alt="" />
+
+                <figcaption class="newMenu__Name">
+                  <div class="newMenu__choco">
+                    <span class="newMenu__Name--ko textPrimary">초코 묻고 더블</span>
+                    <span class="newMenu__Name--ko textSecondary">쉐이크</span>
+                    <span class="newMenu__Name--en textAccent">Choco Shake</span>
+                  </div>
+                  <div class="newMenu__rice">
+                    <span class="newMenu__Name--ko textPrimary">밥대신 라이스</span>
+                    <span class="newMenu__Name--ko textSecondary">쉐이크</span>
+                    <span class="newMenu__Name--en textAccent">Rice Shake</span>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+      </div>
+      <div class="info">
+        <div class="info__inner">
+          <div class="youtube">
+            <h2 class="a11yHidden">홍보영상</h2>
+            <figure>
+              <iframe
+                  src="https://www.youtube.com/embed/UGPo0RqhbKU"
+                  frameborder="0"
+                  allowfullscreen
+                  aria-labelledby="ediyaYoutube"
+                ></iframe>
+                <figcaption class="a11yHidden">
+                  고객감사 이벤트
+                </figcaption>
+            </figure>
+          </div>
+          <div class="notice">
+            <h2 class="notice__headline">NOTICE</h2>
+            <article class="notice__article">
+              <h3 class="notice__articleHeadline">
+                이디야멤버스가 새로워집니다.
+              </h3>
+              <time datetime="2023-12-07T10:17:04">2023.12.07</time>
+              <p>
+                이디야멤버스에 새로운 기능이 추가됩니다. 고객등급제,
+                이디야카드, 스마트 결제 가능.
+              </p>
+            </article>
+            <div class="notice__buttons">
+              <button type="button"
+                class="button--none"
+                aria-label="이전 공지사항 보기"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="15"
+                    height="15"
+                    stroke="#F5F5F5"
+                  />
+                  <path d="M9.25 10.5L6.75 8L9.25 5.5" stroke="#F5F5F5" />
+                </svg>
+              </button>
+              <button type="button"
+                class="button--none"
+                aria-label="다음 공지사항 보기"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect
+                    x="-0.5"
+                    y="0.5"
+                    width="15"
+                    height="15"
+                    transform="matrix(-1 0 0 1 15 0)"
+                    stroke="#F5F5F5"
+                  />
+                  <path d="M6.75 10.5L9.25 8L6.75 5.5" stroke="#F5F5F5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="news">
+            <h2 class="news__headline">NEWS</h2>
+            <ul class="news__list">
+              <li>
+                <a href="/">[MTN] 이디야커피, 조각 케이크 2종 출시 디저트 강화</a>
+                <time datetime="2023-12-07T13:35:25">2023.12.07</time>
+              </li>
+              <li>
+                <a href="/">[아시아경제] 이디야커피, '비니스트 커피믹스</a>
+                <time datetime="2023-12-07T13:35:25">2023.12.07</time>
+              </li>
+            </ul>
+            <a href="/">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <title>뉴스 더보기</title>
+                <rect x="0.5" y="0.5" width="15" height="15" stroke="#F5F5F5" />
+                <path d="M5 8.02114H11M8.05331 5L8.05331 11" stroke="#F5F5F5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="guide">
+        <ul class="guide__list">
+          <li>
+            <a href="/">개인정보 처리방침</a>
+          </li>
+          <li>
+            <a href="/">멤버스 이용약관</a>
+          </li>
+          <li>
+            <a href="/">가맹안내</a>
+          </li>
+          <li>
+            <a href="/">대량쿠폰 구매</a>
+          </li>
+          <li>
+            <a href="/">채용안내</a>
+          </li>
+          <li>
+            <a href="/">고객의 소리</a>
+          </li>
+          <li>
+            <a href="/">사이트맵</a>
+          </li>
+          <li>
+            <a href="/">점주의 방</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <figure class="brand">
+          <img src="./images/brand-dark.svg" alt="" />
+          <figcaption class="a11yHidden">이디야 커피</figcaption>
+        </figure>
+        <address class="address">
+          <span
+            >서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구
+            논현동 221-17)</span
+          >
+          <span><b>TEL : </b>02-543-6467</span>
+          <span><b>FAX : </b>02-543-7191</span>
+          <span><b>사업자등록번호 : </b>107-86-16302</span>
+          <span><b>통신판매업 신고 : </b>강남 제 002519호</span>
+          <span><b>대표이사 : </b>문창기</span>
+        </address>    
+        <small class="copyright">
+          &copy; 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED.
+        </small>
+        
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

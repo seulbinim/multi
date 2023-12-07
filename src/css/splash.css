@@ -1,0 +1,37 @@
+/* 인트로 로고 이미지 */
+/* 스플래시 영역 */
+.splash {
+  background: var(--grayscale-white);
+  color: var(--primary-blue-1);
+  block-size: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  & figure{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 2rem;
+    animation: fadeEffect 4000ms ease-in-out;
+  }
+
+  & img{
+    inline-size: 50%;
+
+  }
+
+  & figcaption{
+    font-weight: 900;
+    font-size: clamp(2rem, 10vw, 6rem);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .splash{
+    background: var(--primary-blue-1);
+    color: var(--grayscale-white);
+  }
+}
+

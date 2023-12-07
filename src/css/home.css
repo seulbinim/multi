@@ -252,6 +252,8 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     column-gap: 1rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
   }
 
   & a {
@@ -263,7 +265,10 @@
 
   & time {
     flex-shrink: 0;
+    /* inline-size: 8rem; */
+    /* justify-self: end; */
   }
+
 }
 
 /* 모바일 공통 홍보영상, 공지사항, 새소식 */

@@ -168,22 +168,21 @@
 
 .notice{
   background: repeating-radial-gradient(#263d83, #102457 20%);
-  position: relative;
-  display: flex;
-  flex-flow: row nowrap;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
 }
 
 .notice__headline{
-  inline-size: 10rem;
-  flex-shrink: 0;
+  grid-area: 1 / 1 / 2 / 2;
   color: #fefefe;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  padding: 1.5rem;
+  translate: 1.5rem 1.5rem;
 }
 
 .notice__article{
+  grid-area: 1 / 2 / 2 / 3;
   background: #fefefe;
   line-height: 1.5;
   padding: 1.5rem;
@@ -210,10 +209,11 @@
 }
 
 .notice__buttons{
-  position: absolute;
-  left: 5.5rem;
-  bottom: 0.5rem;
-  overflow: hidden;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: end;
+  align-self: end;
+  translate: -1rem -0.2rem;
+  display: flow-root;
 
   & button{
     float: left;

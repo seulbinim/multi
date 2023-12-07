@@ -160,8 +160,6 @@
 }
 
 .youtube{
-  background: yellow;
-
   & iframe{
     inline-size: 100%;
     aspect-ratio: 16/9;
@@ -169,8 +167,59 @@
 }
 
 .notice{
-  background: pink;
+  background: repeating-radial-gradient(#263d83, #102457 20%);
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
 }
+
+.notice__headline{
+  inline-size: 10rem;
+  flex-shrink: 0;
+  color: #fefefe;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 1.5rem;
+}
+
+.notice__article{
+  background: #fefefe;
+  line-height: 1.5;
+  padding: 1.5rem;
+
+  & .notice__articleHeadline{
+    color: #24388d;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  & time{
+    color: #878787;
+    font-size: 1.1rem;
+  }
+
+  & p{
+    font-size: 1.4rem;
+    margin-block-start: 1.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+}
+
+.notice__buttons{
+  position: absolute;
+  left: 5.5rem;
+  bottom: 0.5rem;
+  overflow: hidden;
+
+  & button{
+    float: left;
+  }
+}
+
 
 .news{
   background: skyblue;

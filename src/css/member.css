@@ -139,6 +139,40 @@ body{
   }
 }
 
+/* 공통 체크박스 */
+.checkbox{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 0.8rem;
+  position: relative;
+
+  & input{
+    appearance: none;
+    position: absolute;
+    inline-size: 1.8rem;
+    block-size: 1.8rem;
+  }
+
+  & span{
+    inline-size: 1.6rem;
+    block-size: 1.6rem;
+    background: url(./../images/icon-unchecked-square.svg) no-repeat 0 0;
+  }
+
+  & input:checked + span{
+    background-image: url(./../images/icon-checked-square.svg);
+  }
+
+  & label{}
+}
+
+
+
+
+
+
+
 /* 공통 로그인 및 회원가입 버튼 */
 .member__buttons{
   margin-block-start: 2rem;

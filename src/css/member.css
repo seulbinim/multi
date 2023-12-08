@@ -1,21 +1,149 @@
+/* 배경 이미지 */
 body{
   background: url("./../images/coffee-mobile.jpg") no-repeat 50% 0;
 }
 
+/* 모바일 배경이미지 */
 @media (max-width: 768px) {
   body{
     background-position: 50% -100px;
   }
 }
 
-
+/* 데스크탑 배경이미지 */
 @media (min-width: 768px) {
   body{
     background-image: url(./../images/coffee-desktop.jpg);
   }
 }
 
-.input__input{
+/* 공통 로그인 및 회원가입 */
+.member{
+  color: #fefefe;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-block: 7rem 5rem;
+}
 
-  background: yellow url(./../images/svg/sprites-bg.svg#checkmark);
+
+/* 데스크탑 로그인 및 회원가입 */
+@media (min-width: 768px) {
+  .member{
+    /* background: blue; */
+  }
+}
+
+/* 공통 .member__headline, .member__description */
+.member__headline{
+  font-size: 3.6rem;
+  font-weight: 100;
+  letter-spacing: -0.075px;
+  margin-block-end: 2.4rem;
+}
+
+.member__description[lang='en'] {
+  font-size: 1.8rem;
+}
+
+.member__description {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+/* 공통 로그인 폼 */
+.member form{
+  margin-block-start: 10rem;
+}
+
+/* 모바일 로그인 폼 */
+@media (max-width: 768px) {
+  .member form{
+    margin-inline: 3.2rem;
+  }
+}
+
+/* 데스크탑 로그인 폼 */
+@media (min-width: 768px) {
+  .member form{
+    inline-size: 54rem;
+  }
+}
+
+/* 공통 이메일, 패스워드 입력서식 */
+.input{
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 0.5rem;
+  block-size: 10rem;
+
+  & label{
+    position: absolute;
+    left: 0;
+    top: 2.4rem;
+    font-size: 1.8rem;
+    transition: all 200ms;
+  }
+
+  &.is--focus label{
+    translate: 0 -180%;
+    font-size: 1.2rem;
+  }
+
+
+  & input{
+    color: inherit;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 99% 50%;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    block-size: 4.8rem;
+    padding-inline: 1rem;
+  }
+
+  &.is--valid input{
+    background-image: url("./../images/icon-checked.svg");
+  }
+
+  &.is--invalid input{
+    background-image: url("./../images/icon-warning.svg");
+  }
+
+  &.is--valid span{
+    display: none;
+  }
+
+  &.is--invalid span{
+    display: block;
+  }
+}
+
+/* 공통 패스워드 입력서식 */
+.member__password{
+
+  & button{
+    position: absolute;
+    top: 1.6rem;
+    right: 0;
+  }
+
+  &.is--invalid button, &.is--valid button{
+    right: 2.4rem;
+  }
+}
+
+
+
+/* 공통 패스워드 보기/감추기 버튼 */
+.button--password{
+  inline-size: 1.6rem;
+  block-size: 1.6rem;
+  background: url(./../images/icon-visible.svg) no-repeat 0 0;
+
+  &.is--toggle{
+    background-image: url(./../images/icon-invisible.svg);
+  }
 }

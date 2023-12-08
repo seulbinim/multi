@@ -1,4 +1,4 @@
-## Git, NVM, Node, Editor, Web Browser
+## Git, Node, 에디터, 웹브라우저
 
 - [Git](https://git-scm.com/downloads)
 - [NVM Windows](https://github.com/nvm-sh/nvm)
@@ -11,7 +11,6 @@
 - [web developer](https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=ko)
 - [headingsmap](https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=ko)
 - [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=ko)
--
 
 ## VS Code 확장 프로그램
 
@@ -24,4 +23,4 @@
 
 ## 개발 시 가독성을 높일 수 있는 폰트
 
-[Fira Code](https://github.com/tonsky/FiraCode)
+- [Fira Code](https://github.com/tonsky/FiraCode)

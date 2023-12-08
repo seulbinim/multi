@@ -112,6 +112,10 @@ body{
     background-image: url("./../images/icon-warning.svg");
   }
 
+  & span{
+    font-size: 1.2rem;
+  }
+
   &.is--valid span{
     display: none;
   }
@@ -135,6 +139,43 @@ body{
   }
 }
 
+/* 공통 로그인 및 회원가입 버튼 */
+.member__buttons{
+  margin-block-start: 2rem;
+  display: flex;
+
+  & .button--outline{
+    color: #fefefe;
+    display: block;
+    text-align: center;
+  }
+
+  & .button--fill, & .button--outline{
+    border-radius: 0.6rem;
+  }
+}
+
+
+/* 모바일 로그인 및 회원가입 버튼 */
+@media (max-width: 768px) {
+  .member__buttons{
+    flex-flow: column nowrap;
+    row-gap: 1rem;
+  }
+}
+
+/* 데스크탑 로그인 및 회원가입 버튼 */
+@media (min-width: 768px) {
+  .member__buttons{
+    flex-flow: row nowrap;
+    column-gap: 2rem;
+    
+    & button, & a{
+      width: 50%;
+    }
+  }
+}
+
 
 
 /* 공통 패스워드 보기/감추기 버튼 */
@@ -145,5 +186,16 @@ body{
 
   &.is--toggle{
     background-image: url(./../images/icon-invisible.svg);
+  }
+}
+
+/* 공통 button--fill 스타일링 */
+.button--fill{
+  background: #fefefe;
+  color: #24388D;
+  padding:1rem 2rem;
+
+  &[disabled]{
+    color: #D2C9B6;
   }
 }

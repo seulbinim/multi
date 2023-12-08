@@ -14,3 +14,8 @@ body{
     background-image: url(./../images/coffee-desktop.jpg);
   }
 }
+
+.input__input{
+
+  background: yellow url(./../images/svg/sprites-bg.svg#checkmark);
+}

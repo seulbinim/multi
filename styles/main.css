@@ -1,0 +1,49 @@
+@import "./reset.css";
+@import "./theme.css";
+
+/* 본문 스타일 */
+body {
+  background-color: var(--white);
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  color: var(-content);
+}
+
+/* 레이아웃 */
+.container {
+  background-color: var(--yellow);
+}
+
+.layout {
+  inline-size: 940px;
+  margin-inline: auto;
+}
+
+.header {
+  background-color: pink;
+  block-size: 10vh;
+}
+
+.visual {
+  background-color: orange;
+  height: 10vh;
+}
+
+.main {
+  background-color: skyblue;
+}
+
+.group {
+  height: 20vh;
+}
+
+.slogan {
+  background-color: lightgreen;
+  height: 10vh;
+}
+
+.footer {
+  background-color: silver;
+  height: 10vh;
+}

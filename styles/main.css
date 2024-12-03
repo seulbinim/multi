@@ -30,12 +30,32 @@ body {
   height: 10vh;
 }
 
+/* float layout */
 .main {
   background-color: skyblue;
+  display: flow-root;
+  padding: 30px 15px;
+  min-height: 450px;
 }
 
 .group {
-  height: 20vh;
+  float: left;
+  margin-inline: 15px;
+}
+
+.group1 {
+  background-color: tomato;
+  width: 250px;
+}
+
+.group2 {
+  background-color: violet;
+  width: 380px;
+}
+
+.group3 {
+  background-color: teal;
+  width: 190px;
 }
 
 .slogan {

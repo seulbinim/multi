@@ -33,14 +33,15 @@ body {
 /* float layout */
 .main {
   background-color: skyblue;
-  display: flow-root;
-  padding: 30px 15px;
   min-height: 450px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .group {
-  float: left;
-  margin-inline: 15px;
+  flex: 0 1 auto;
 }
 
 .group1 {

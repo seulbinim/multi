@@ -15,7 +15,7 @@ body {
   background-color: var(--yellow);
 }
 
-.layout {
+.max-size {
   inline-size: 940px;
   margin-inline: auto;
 }
@@ -30,7 +30,7 @@ body {
   height: 10vh;
 }
 
-/* float layout */
+/* flex layout */
 .main {
   background-color: skyblue;
   min-height: 450px;

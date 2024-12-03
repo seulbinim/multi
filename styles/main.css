@@ -26,6 +26,27 @@
   left: 28px;
 }
 
+/* 텍스트 링크 모음 - 멤버 서비스 */
+.member-service {
+  font-size: 0;
+  text-align: end;
+  padding: 8px;
+
+  li {
+    display: inline-block;
+    font-size: 0.875rem;
+
+    span{
+      margin-inline: 0.5em;
+    }
+
+    a{
+      text-transform: uppercase;
+      padding: 4px;
+    }
+  }
+}
+
 .visual {
   background-color: orange;
   height: 10vh;

@@ -1,15 +1,11 @@
 @import "./reset.css";
 @import "./theme.css";
 @import "./base.css";
+@import "./utils.css";
 
 /* 레이아웃 */
 .container {
   background-color: var(--yellow);
-}
-
-.max-size {
-  inline-size: 940px;
-  margin-inline: auto;
 }
 
 /* 헤더 */
@@ -47,9 +43,19 @@
   }
 }
 
+/* 메인 메뉴 */
+.navigation{
+
+}
+
+.menu{
+  background: var(--orangered) var(--menu);
+  color: var(--white);
+}
+
 .visual {
-  background-color: orange;
-  height: 10vh;
+
+  height: 120px;
 }
 
 /* flex layout */

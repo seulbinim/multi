@@ -11,10 +11,6 @@ ol {
   padding-left: 0;
 }
 
-html{
-  font-size: 16px
-}
-
 /* 본문 스타일 */
 body {
   background-color: var(--white);

@@ -1,14 +1,6 @@
 @import "./reset.css";
 @import "./theme.css";
-
-/* 본문 스타일 */
-body {
-  background-color: var(--white);
-  font-family: "Pretendard Variable", Pretendard, sans-serif;
-  font-weight: 300;
-  margin: 0;
-  color: var(-content);
-}
+@import "./base.css";
 
 /* 레이아웃 */
 .container {
@@ -20,9 +12,18 @@ body {
   margin-inline: auto;
 }
 
+/* 헤더 */
 .header {
-  background-color: pink;
-  block-size: 10vh;
+  background-color: var(--white);
+  position: relative;
+}
+
+/* 로고 */
+.logo {
+  background-color: rgba(255, 0, 0, 0.2);
+  position: absolute;
+  top: 54px;
+  left: 28px;
 }
 
 .visual {

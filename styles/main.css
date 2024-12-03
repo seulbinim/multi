@@ -12,14 +12,16 @@
 .header {
   background-color: var(--white);
   position: relative;
+  padding-inline: 30px;
+  border-radius: 0 0 15px 15px;
 }
 
 /* 로고 */
 .logo {
   background-color: rgba(255, 0, 0, 0.2);
   position: absolute;
-  top: 54px;
-  left: 28px;
+  top: 38px;
+  left: 60px;
 }
 
 /* 텍스트 링크 모음 - 멤버 서비스 */
@@ -45,12 +47,52 @@
 
 /* 메인 메뉴 */
 .navigation{
-
+  padding-bottom: 50px;
 }
 
 .menu{
   background: var(--orangered) var(--menu);
-  color: var(--white);
+  box-shadow: 0 -2px 0 0 var(--black);
+  height: 45px;
+  padding-left: 225px;
+  
+  > li{
+    float: left;
+    height: inherit;
+
+    .menu-button{
+      color: var(--white);
+      font-size: 0.9375rem;
+      font-weight: 700;
+      background: transparent;
+      padding: 0 23px;
+      height: 100%;
+      line-height: 45px;
+      display: block;
+      border: 0;
+      border-left: 2px solid var(--white);
+      align-content: center;
+      text-shadow: 1px 1px 2px var(--black), -1px -1px 2px var(--black);
+    } 
+  }
+  
+  > li.is-active{
+    .menu-button{
+      color: var(--yellow);
+    }
+
+    .menu-button::after{
+      content: "";
+      display: block;
+      border-top: 2px solid var(--black);
+    }
+  }
+
+  .sub-menu{
+    background-color: violet;
+    position: absolute;
+  }
+
 }
 
 .visual {

@@ -2,6 +2,7 @@
 @import "./theme.css";
 @import "./base.css";
 @import "./utils.css";
+@import "./animation.css";
 
 /* 레이아웃 */
 .container {
@@ -128,17 +129,14 @@
 /* 비주얼 */
 .visual {
   height: 120px;
-  background-color: yellow;
-  font-size: 16px;
 
-  @media (min-width: 640px){
-    background-color: pink;
-    font-size: 20px;
-  }
-
-  @media (min-width: 960px){
-    background-color: aqua;
-    font-size: 24px;
+  p{
+    display: inline-block;
+    color: rgba(0,0,0,0);
+    animation-name: moveEffect;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 }
 

@@ -179,6 +179,9 @@
 
 .group {
   flex: 0 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
 }
 
 .group1 {
@@ -257,6 +260,23 @@
   }
 }
 
+/* 유효성 검사 배너 */
+.validation{
+  ul{ 
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+  }
+
+  a{
+    display: block;
+    background: url(./../assets/validation_icon.png) no-repeat 18px 50%, 
+    linear-gradient(var(--gray-600), var(--gray-400));
+    padding: 10px 10px 10px 45px;
+    border-radius: 50px;
+    border: 1px solid var(--gray-600)
+  }
+}
 
 .slogan {
   background-color: lightgreen;

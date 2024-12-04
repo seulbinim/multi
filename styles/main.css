@@ -240,8 +240,11 @@
     &::before{
       content: "";
       position: absolute;
-      height: 10px;
-      background-color: red;
+      top:50%;
+      left: var(--spacing);
+      width: calc(100% - var(--spacing) * 2); 
+      height: 1px;
+      background-color: var(--border-color);
     }
   }
 

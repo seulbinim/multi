@@ -1,0 +1,51 @@
+/* 헤드라인 - 메인 콘텐츠 섹션 제목 */
+.headline{
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+/* 아이콘 + 링크 텍스트 */
+.icon-link{
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+
+  span{
+    color: var(--orangered);
+  }
+}
+
+/* form(input) 입력 서식 */
+.form-input{
+  display: flex;
+  align-items: center;
+
+  label{
+    width: 4em;
+    flex-shrink: 0;
+  }
+
+  input{
+    border: 1px solid var(--border-color);
+    height: 22px;
+    line-height: 20px;
+    padding-left: 0.5em;
+    min-width: 0;
+    flex: 1;
+  }
+}
+
+/* Fill 버튼 */
+.button-fill{
+  background-color: var(--orangered);
+  color: var(--white);
+  padding: 6px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 0.75rem;
+}
+
+/* 구분선 */
+.divider{
+  border: 1px solid var(--border-color);
+}

@@ -3,6 +3,7 @@
 @import "./base.css";
 @import "./utils.css";
 @import "./animation.css";
+@import "./components.css";
 
 /* 레이아웃 */
 .container {
@@ -155,7 +156,6 @@
     animation-delay: 1s;
   }
 
-
   p{
     display: inline-block;
     color: rgba(0,0,0,0);
@@ -166,14 +166,15 @@
   }
 }
 
-/* flex layout */
+/* 메인 콘텐츠 */
 .main {
-  background-color: skyblue;
+  background-color: var(--white);
   min-height: 450px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 30px;
+  border-radius: 15px 15px 0 0;
 }
 
 .group {
@@ -181,19 +182,77 @@
 }
 
 .group1 {
-  background-color: tomato;
   width: 250px;
 }
 
 .group2 {
-  background-color: violet;
   width: 380px;
 }
 
 .group3 {
-  background-color: teal;
   width: 190px;
 }
+
+/* 로그인 */
+.login{
+  --spacing: 10px; 
+
+  background: radial-gradient(circle at right top, var(--orange), var(--orangered));
+  border-radius: 5px;
+  padding: 15px;
+
+  .headline{
+    color: var(--yellow);
+  }
+
+  .login-form, .login-member{
+    background-color: var(--white);
+  }
+
+  .login-form{
+    margin-top: var(--spacing);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 6px;
+    padding: var(--spacing) var(--spacing) 0 var(--spacing);
+    position: relative;
+
+    .form-input{
+      width: 145px;
+    }
+
+    .button-fill{
+      width: 50px;
+      aspect-ratio: 1/1;
+      position: absolute;
+      top: var(--spacing);
+      right: var(--spacing);
+    }
+  }
+
+  .divider{
+    height: 21px;
+    background-color: var(--white);
+    border: 0;
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      height: 10px;
+      background-color: red;
+    }
+  }
+
+  .login-member{
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--spacing) var(--spacing) var(--spacing);
+  }
+}
+
 
 .slogan {
   background-color: lightgreen;

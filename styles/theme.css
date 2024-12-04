@@ -21,4 +21,5 @@
   --primary: var(--orangered);
   --content: var(--darkgray);
   --menu: linear-gradient(180deg, var(--orange) 0%, var(--orangered) 35%, var(--orangered) 60%, var(--orange) 100%);
+  --border-color: var(--gray-500); 
 }

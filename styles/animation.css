@@ -5,10 +5,16 @@
     color: rgba(0,0,0,0);
     transform: translate(0, 0);
   }
-  
+
   100%{
     font-size: 24px;
     color: rgba(0,0,0,1);
     transform: translate(400px, 75px);
   }
+}
+
+/* Fade 애니메이션 */
+@keyframes fadeEffect{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
 }

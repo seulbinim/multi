@@ -22,6 +22,7 @@
   position: absolute;
   top: 38px;
   left: 60px;
+  z-index: 1;
 }
 
 /* 텍스트 링크 모음 - 멤버 서비스 */
@@ -59,6 +60,7 @@
   > li{
     float: left;
     height: inherit;
+    position: relative;
 
     .menu-button{
       color: var(--white);
@@ -86,12 +88,30 @@
       display: block;
       border-top: 2px solid var(--black);
     }
+
+    .sub-menu{
+      display: block;
+    }
+  }
+
+  > li:nth-child(n+4) .sub-menu{
+    right: 0; 
   }
 
   .sub-menu{
     background-color: violet;
     position: absolute;
+    top: 47px;
+    display: none;
+    white-space: nowrap;
+
+    li{
+      display: inline-block;
+    }
   }
+
+
+
 
 }
 

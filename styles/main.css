@@ -5,7 +5,7 @@
 
 /* 레이아웃 */
 .container {
-  background-color: var(--yellow);
+  background:#ccc linear-gradient(#ccc 0%, #eee 35%, #fff 60%, #fff 100%);
 }
 
 /* 헤더 */
@@ -125,9 +125,21 @@
 
 }
 
+/* 비주얼 */
 .visual {
-
   height: 120px;
+  background-color: yellow;
+  font-size: 16px;
+
+  @media (min-width: 640px){
+    background-color: pink;
+    font-size: 20px;
+  }
+
+  @media (min-width: 960px){
+    background-color: aqua;
+    font-size: 24px;
+  }
 }
 
 /* flex layout */

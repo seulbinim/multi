@@ -30,6 +30,7 @@
   font-size: 0;
   text-align: end;
   padding: 8px;
+  translate: 12px 0;
 
   li {
     display: inline-block;
@@ -48,7 +49,7 @@
 
 /* 메인 메뉴 */
 .navigation{
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .menu{
@@ -99,7 +100,6 @@
   }
 
   .sub-menu{
-    background-color: violet;
     position: absolute;
     top: 47px;
     display: none;
@@ -107,6 +107,16 @@
 
     li{
       display: inline-block;
+      margin-right: 0.5em;
+    }
+
+    a{
+      display: inline-block;
+      padding: 0.5em;
+    }
+
+    span{
+      margin-right: 0.5em;
     }
   }
 

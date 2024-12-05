@@ -368,6 +368,33 @@
   }
 }
 
+/* 공지사항 및 자료실 */
+.tabs{
+  background: yellow;
+
+  [role="tablist"]{
+    background: pink;
+    display: flex;
+  }
+
+  [role="tab"]{
+    background: var(--gray-400);
+    border: 1px solid var(--gray-600);
+    padding: 8px 12px;
+    border-radius: 5px 5px 0 0;
+
+    &[aria-selected="true"]{
+      background: var(--white);
+      color: var(--orangered);
+      border-color: currentColor currentColor transparent currentColor;
+    }
+  }
+
+  .is-hidden{
+    display: none;
+  }
+}
+
 .slogan {
   background-color: lightgreen;
   height: 10vh;

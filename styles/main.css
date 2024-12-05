@@ -296,20 +296,35 @@
     display: contents;
   }
 
-  dl div:nth-child(even){
+  div{
+    display: grid;
+    gap: 5px 15px;
+  }
 
+  dl div:nth-child(odd){
+    grid-template-columns: 60px 1fr;
+    grid-template-areas: "thumbnail subject" 
+                         "thumbnail brief";
+  }
+
+  dl div:nth-child(even){
+    grid-template-columns: 1fr 60px;
+    grid-template-areas: "subject thumbnail" 
+    "brief thumbnail";
   }
 
   dt{
     font-weight: 500;
     color: var(--blue);
+    grid-area: subject;
   }
 
   div dd:nth-of-type(1){
-
+    grid-area: thumbnail;
   }
 
   div dd:nth-of-type(2){
+    grid-area: brief;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;

@@ -297,34 +297,19 @@
   }
 
   dl div:nth-child(even){
-    dt{
-      float: left;
-    }
 
-    dd:nth-of-type(1){
-      float: right;
-    }
-
-    dd:nth-of-type(2){
-      float: left;
-    }
   }
 
   dt{
-    width: 140px;
-    float: right;
     font-weight: 500;
     color: var(--blue);
-    margin-bottom: 5px;
   }
 
   div dd:nth-of-type(1){
-    float: left;
+
   }
 
   div dd:nth-of-type(2){
-    width: 140px;
-    float: right;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;

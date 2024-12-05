@@ -491,6 +491,65 @@
   }
 }
 
+/* 인기 사이트 */
+.favorite{
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+
+  .headline{
+    span{
+      color: var(--orangered);
+    }
+  }
+
+  ol{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 6px;
+    counter-reset: number;
+
+    li{
+      counter-increment: number;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 6px;
+    }
+
+    li::before{
+      content: counter(number);
+      background-color: gray;
+      color:white;
+      width: 1rem;
+      font-size: 0.75rem;
+      border-radius: 2px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    em{
+      width: 9px;
+      height: 11px;
+      background-image: url(./../assets/rank.png);
+      margin-left: auto;
+    }
+    
+    .stop{ background-position: 0 50%;}
+    .down{ background-position: 0 100%;}
+  }
+
+
+  .more{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
 
 
 .slogan {

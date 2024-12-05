@@ -225,6 +225,10 @@
       width: 145px;
     }
 
+    label{
+      width: 4em;
+    }
+
     .button-fill{
       width: 50px;
       aspect-ratio: 1/1;
@@ -280,9 +284,7 @@
 
 /* 웹 관련 용어 */
 .term{
-  border: 1px solid var(--gray-700);
   border-radius: 5px;
-  background: var(--gray-400) linear-gradient(var(--gray-600), var(--gray-400));
   padding: 15px;
   display: flex;
   flex-flow: column nowrap;
@@ -329,6 +331,40 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+  }
+}
+
+/* 검색 폼 */
+.search{
+  background: var(--gray-400);
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
+
+  form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    div{
+      flex-grow: 1;
+    }
+
+    label{
+      margin-right: 10px;
+
+      span{
+        margin-right: 5px;
+      }
+    }
+
+    input{
+      border-radius: 3px;
+    }
+
+    .button-fill{
+      background: var(--black);
+      padding-inline: 1em;
+    }
   }
 }
 

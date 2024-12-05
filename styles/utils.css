@@ -18,3 +18,9 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+/* 그라디언트 배경 */
+.gradient-bg{
+  border: 1px solid var(--gray-700);
+  background: var(--gray-400) linear-gradient(var(--gray-600), var(--gray-400));
+}

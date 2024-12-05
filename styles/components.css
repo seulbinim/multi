@@ -21,7 +21,6 @@
   align-items: center;
 
   label{
-    width: 4em;
     flex-shrink: 0;
   }
 
@@ -39,8 +38,9 @@
 .button-fill{
   background-color: var(--orangered);
   color: var(--white);
-  padding: 6px;
+  padding: 0;
   border: 0;
+  height: 22px;
   border-radius: 3px;
   font-size: 0.75rem;
 }

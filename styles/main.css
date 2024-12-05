@@ -430,6 +430,69 @@
   }
 }
 
+/* 새소식 */
+.news{
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200%;
+    height: 1px;
+    scale: 0.5;
+    transform-origin: top left;
+    background: linear-gradient(90deg, var(--black) 0%, var(--white) 70%, var(--white) 100%);
+  }
+
+  .headline{
+    color: var(--orangered);
+  }
+
+  article{
+    margin-top: 35px;
+    padding-left: 130px;
+    position: relative;
+
+    h3{
+      font-size: 0.875rem;
+    }
+
+    time{
+      display: block;
+      margin:5px 0 10px;
+    }
+
+    p{
+      line-height: 1.5;
+    }
+
+    figure{
+      position: absolute;
+      top: 2px;      
+      left: 0;
+      text-align: center;
+
+      img{
+        box-shadow: 0 15px 20px 5px var(--gray-400);
+      }
+
+      figcaption{
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .more{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+
+
 .slogan {
   background-color: lightgreen;
   height: 10vh;

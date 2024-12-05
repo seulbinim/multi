@@ -389,6 +389,36 @@
     }
   }
 
+  ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    margin-top: 15px;
+
+    li{
+      display: flex;
+      gap: 1px;
+      flex-flow: row nowrap;
+      gap: 10px;
+
+      a{
+        flex-grow: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        span{
+          margin-right: 6px;
+        }
+      }
+
+      time{
+        flex-shrink: 0;
+      }
+    }
+
+  }
+
   .more{
     position: absolute;
     top: 0;

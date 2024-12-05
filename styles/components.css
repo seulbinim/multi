@@ -49,3 +49,14 @@
 .divider{
   border: 1px solid var(--border-color);
 }
+
+/* 더보기 링크 */
+.more{
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  span{
+    color: var(--green);
+  }
+}

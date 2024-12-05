@@ -370,10 +370,9 @@
 
 /* 공지사항 및 자료실 */
 .tabs{
-  background: yellow;
+  position: relative;
 
   [role="tablist"]{
-    background: pink;
     display: flex;
   }
 
@@ -388,6 +387,12 @@
       color: var(--orangered);
       border-color: currentColor currentColor transparent currentColor;
     }
+  }
+
+  .more{
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   .is-hidden{

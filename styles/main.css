@@ -658,7 +658,55 @@
 }
 
 .footer {
-  background-color: silver;
-  height: 10vh;
+  background:#ccc linear-gradient(#ccc 0%, #eee 35%, #fff 60%, #fff 100%);
+  padding: 15px 0;
+
+  .footer-inner{
+    display: grid;
+    grid-template-columns: 180px 1fr 100px;
+    grid-template-areas: "logo guide badge" "logo address badge" "logo copyright badge";
+    gap: 10px;
+  }
+
+  .footer-logo{
+    grid-area: logo;
+    place-self: center;
+  }
+
+  .guide{
+    grid-area: guide;
+    background: #7b8385;
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 10px 0;
+    border-radius: 20px;
+    text-transform: uppercase;
+    justify-content: center;
+
+    a{
+      display: block;
+      padding-inline: 15px;
+      margin-inline: 5px;
+    }
+  }
+
+  .address{
+    grid-area: address;
+    font-style: normal;
+  }
+
+  .copyright{
+    grid-area: copyright;
+    font-size: 0.875rem;
+  }
+
+  .badge{
+    grid-area: badge;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    justify-content: space-around;
+  }
 
 }

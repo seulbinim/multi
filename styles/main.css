@@ -524,6 +524,43 @@
   }
 }
 
+/* 관련 사이트 */
+.related{
+  border-top: 1px solid var(--gray-600);
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+
+  .related-list{
+    --height: 25px;
+
+    background: var(--white);
+    border-radius: 5px;
+    border: 1px solid var(--gray-600);
+    height: calc(var(--height) + 2px);
+    overflow: hidden;
+    transition: height 2s 0s ease-in-out, padding 1s 2s ease-in-out;
+
+    li{
+      height: var(--height);
+      padding: 2px;
+    }
+
+    a{
+      display: block;
+      line-height: calc(var(--height) - 4px);
+      text-indent: 1.5em;
+    }
+  }
+
+  .related-list:hover,
+  .related-list:focus{
+    padding: 10px 0;
+    height: auto;
+  }
+}
 
 /* 인기 사이트 */
 .favorite{

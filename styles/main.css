@@ -628,25 +628,26 @@
   display: flex;
   gap: 30px;
   padding: 0 30px;
+  background: yellow;
 
   h2{
     width: 110px;
     height: 83px;
     background: url(./../assets/coffee.png) no-repeat;
     flex-shrink: 0;
-    /* margin-bottom: -60px; */
+    /* margin-bottom: -120px; */
   }
 
   p{
     color: var(--gray-600);
     color: red;
-    font-size: 1rem;
+    /* font-size: 1rem;
     line-height: 1.5;
-    margin: 15px 0;
+    margin: 15px 0; */
 
     q::before{
       display: inline-block;
-      font-size: 2rem;
+      /* font-size: 2rem; */
       translate: 0 0.25em;
     }
 
@@ -659,4 +660,5 @@
 .footer {
   background-color: silver;
   height: 10vh;
+
 }

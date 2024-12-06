@@ -493,36 +493,35 @@
 
 /* 신규이벤트 */
 .event{
-  .headline{
-    float: left;
-  }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 10px;
 
   .button-wrapper{
-    float: right;
-
-    button{
-      float: left;
-      margin-left: 5px;
-    }
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
   }
 
   .event-thumbnail{
-    clear: both;
-    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
 
     img{
       box-shadow: 5px 5px 0 0 var(--gray-400);
     }
 
     figcaption{
-      margin-top: 5px;
       line-height: 1.5;
+
       em{
         font-style: normal;
       }
     }
   }
-
 }
 
 

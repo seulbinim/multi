@@ -559,6 +559,7 @@
   .related-list:focus{
     padding: 10px 0;
     height: auto;
+    height: 147px;
   }
 }
 
@@ -622,10 +623,37 @@
   }
 }
 
-
+/* 슬로건 */
 .slogan {
-  background-color: lightgreen;
-  height: 10vh;
+  display: flex;
+  gap: 30px;
+  padding: 0 30px;
+
+  h2{
+    width: 110px;
+    height: 83px;
+    background: url(./../assets/coffee.png) no-repeat;
+    flex-shrink: 0;
+    /* margin-bottom: -60px; */
+  }
+
+  p{
+    color: var(--gray-600);
+    color: red;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 15px 0;
+
+    q::before{
+      display: inline-block;
+      font-size: 2rem;
+      translate: 0 0.25em;
+    }
+
+    q::after{
+      content: "";
+    }
+  }
 }
 
 .footer {

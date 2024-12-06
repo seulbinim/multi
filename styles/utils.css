@@ -24,3 +24,30 @@
   border: 1px solid var(--gray-700);
   background: var(--gray-400) linear-gradient(var(--gray-600), var(--gray-400));
 }
+
+/* 둥근 모서리 */
+.rounded-xs{
+  border-radius: 3px;
+}
+.rounded-sm{
+  border-radius: 5px;
+}
+.rounded-md{
+  border-radius: 15px;
+}
+
+/* 여백 */
+.spacing-xs{
+  padding: 5px;
+}
+.spacing-sm{
+  padding: 10px;
+}
+.spacing-md{
+  padding: 15px;
+}
+
+/* 글자 색상 */
+.accent-color{
+  color: var(--primary);
+}

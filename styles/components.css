@@ -60,3 +60,15 @@
     color: var(--green);
   }
 }
+
+/* 이전/다음 버튼 */
+.button-sprite{
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  background: url(./../assets/back_forward.png) no-repeat;
+
+  &:button-prev{background-position: 0 0;}
+  &.button-next{ background-position: 100% 0;}
+}

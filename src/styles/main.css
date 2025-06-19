@@ -54,9 +54,6 @@
   display: grid;
   grid-template-columns: 205px repeat(6, 1fr);
   grid-template-rows: 38px auto 30px;
-  /* grid-template-areas:
-    "lnb lnb lnb lnb lnb lnb lnb"
-    "brand nav nav nav nav nav nav"; */
 
   .brand {
     grid-area: 2 / 1;
@@ -88,30 +85,24 @@
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
 
-    .main-menu {
+    .tabs,
+    [role="tablist"] {
       display: contents;
-    }
-
-    .is-hidden {
-      display: none;
     }
 
     [role="tablist"] {
-      /* background-color: pink; */
-      grid-column: 2/ -1;
-      display: contents;
-      /* grid-area: 1 / 2 / 2 / -1; */
-
       button:nth-child(1) {
         grid-column: 2;
       }
     }
 
     [role="tabpanel"] {
-      /* background: yellow; */
       grid-column: 2/ -1;
       padding-top: 10px;
-      /* grid-area: 2 / 2 / 3 / -1; */
+
+      &.is-hidden {
+        display: none;
+      }
 
       ul {
         display: flex;

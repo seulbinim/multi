@@ -15,6 +15,7 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
     />
+    <script type="module" src="/src/js/navigation.js"></script>
   </head>
   <body>
     <div class="container">
@@ -35,7 +36,7 @@
           <h2 class="a11y-hidden">메인 메뉴</h2>
           <div class="main-menu tabs">
             <div role="tablist">
-              <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
+              <button id="tab-1" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-1">
                 <span class="focus">HTML에 대해</span>
               </button>
               <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
@@ -54,7 +55,7 @@
                 <span class="focus">자료실</span>
               </button>
             </div>
-            <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+            <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" class="is-hidden">
               <ul>
                 <li><a href="/">HTML5 소개</a></li>
                 <li><a href="/">레퍼런스</a></li>

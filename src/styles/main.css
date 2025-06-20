@@ -383,12 +383,48 @@ body {
   }
 }
 
+/* 신규 이벤트 */
+
+/* 관련 사이트 */
+.related {
+  border-top: 1px solid var(--gray-700);
+  margin-top: 10px;
+  padding-top: 10px;
+
+  ul {
+    margin-top: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-700);
+    border-radius: 4px;
+    padding: 10px;
+    height: 45px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      height: 145px;
+    }
+
+    li {
+      height: 25px;
+      background-color: yellow;
+      align-content: center;
+      /* margin-top: 10px; */
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 /* 인기 사이트 */
 .favorite {
   --spacing: 12px;
 
   position: relative;
   padding: var(--spacing);
+  margin-top: 20px;
 
   .favorite-ranking {
     margin-top: 12px;

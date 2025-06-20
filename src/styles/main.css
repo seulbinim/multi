@@ -383,6 +383,66 @@ body {
   }
 }
 
+/* 인기 사이트 */
+.favorite {
+  --spacing: 12px;
+
+  position: relative;
+  padding: var(--spacing);
+
+  .favorite-ranking {
+    margin-top: 12px;
+    counter-reset: number;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    li {
+      counter-increment: number;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      &::before {
+        content: counter(number, decimal);
+        font-size: 0.8125rem;
+        color: var(--white);
+        background-color: var(--gray-700);
+        padding: 2px;
+        width: 1.5em;
+        text-align: center;
+        border-radius: 4px;
+      }
+    }
+
+    .up,
+    .stop,
+    .down {
+      width: 9px;
+      height: 11px;
+      margin-left: auto;
+      background-image: url(/src/assets/webcafe/rank.png);
+      background-repeat: no-repeat;
+    }
+
+    .stop {
+      background-position: 0 50%;
+    }
+
+    .down {
+      background-position: 0 100%;
+    }
+  }
+
+  .more {
+    position: absolute;
+    top: var(--spacing);
+    right: var(--spacing);
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  }
+}
+
 /* 푸터 */
 .footer-container {
   background-image: linear-gradient(#ccc 0%, #eee 60%, #fff 70%, #fff 100%);

@@ -390,10 +390,9 @@ body {
 
 /* 신규 이벤트 */
 .event {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 1fr max-content;
   gap: 8px;
-  justify-content: space-between;
 
   .button-wrapper {
     display: flex;
@@ -409,17 +408,12 @@ body {
   }
 
   figure {
-    display: contents;
-
-    img,
-    figcaption {
-      width: 100%;
-    }
+    grid-column: span 2;
 
     em {
       font-style: normal;
       display: block;
-      margin-bottom: 4px;
+      margin: 8px 0 4px;
     }
   }
 }
